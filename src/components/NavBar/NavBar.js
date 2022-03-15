@@ -2,13 +2,13 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar";
 import logotipo from "../../assets/img/logotipo.png"
-
+import CartIcon from "../CartWidget/CartIcon.js";
 
 
 function NavBar() {
   return (
     <>
-   <Navbar bg="dark" variant="dark">
+   <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
     <Container>
       <Navbar.Brand href="#home">
         <img
@@ -27,9 +27,10 @@ function NavBar() {
         <Nav.Link href="#productos">Productos</Nav.Link>
         <Nav.Link href="#destacados">Destacados</Nav.Link>
       </Nav>
+      <CartIcon />
+    </Container>
     
   
-    </Container>
   </Navbar>
 </>
   )

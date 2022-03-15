@@ -1,7 +1,7 @@
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from './components/Cards/Cards';
+import Card from './components/ItemListContainer/Cards';
 
 
 function App() {
@@ -10,10 +10,8 @@ function App() {
     <>
     <NavBar />
     <div className="App">
-    <Card title= { "I'm a card" } description= {'lorem ipsum dolot sit amet'} />
-    <Card title= { "I'm a card" } description= {'lorem ipsum dolot sit amet'} />
-    <Card title= { "I'm a card" } description= {'lorem ipsum dolot sit amet'} />
-    <Card title= { "I'm a card" } description= {'lorem ipsum dolot sit amet'} />
+      <Card value = 'Este es mi título de la sección de productos'  />
+     
     </div>
     
     </>

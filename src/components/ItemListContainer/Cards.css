@@ -7,3 +7,7 @@
     justify-content: center;
     align-items: center;
 }
+.title {
+    text-shadow: 2px black;
+    margin-top: 1.5em;
+}

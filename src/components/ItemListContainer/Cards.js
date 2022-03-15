@@ -1,9 +1,9 @@
 import "./Cards.css"
 
-function Card (greeting) {
+function Card ({greeting}) {
     return (
         <>
-            <h2 className="h2 title">{greeting.value}</h2>
+            <h2 className="h2 title">{greeting}</h2>
           
         </>
     )

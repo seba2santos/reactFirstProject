@@ -10,7 +10,7 @@ function App() {
     <>
     <NavBar />
     <div className="App">
-      <Card value = 'Este es mi título de la sección de productos'  />
+      <Card greeting = {'Este es mi título de la sección de productos' } />
      
     </div>
     

@@ -2,6 +2,7 @@
     min-width: 100px;
     color: azure;
     position: absolute;
-  
+    top: 0;
     right: 0;
+    margin-top: 2em;
 }

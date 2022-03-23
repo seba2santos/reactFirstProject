@@ -1,7 +1,8 @@
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from './components/ItemListContainer/Cards';
+
+import ItemList from './components/ItemListContainer/ItemList';
 
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
     <>
     <NavBar />
     <div className="App">
-      <Card greeting = {'Este es mi título de la sección de productos' } />
+      
+      <ItemList />
+      
      
     </div>
     

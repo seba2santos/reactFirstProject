@@ -14,7 +14,7 @@ function ItemList () {
 
     const getProductsFromData = async () => {
         try {
-            const result = getProducts;
+            const result = await getProducts;
             setProducts(result)
         }
         catch (err) {
@@ -25,13 +25,13 @@ function ItemList () {
         getProductsFromData()
     }, []);
     return (
-        <div className='lista-productos'>
+        <div className='lista-productos' style={{display: 'flex', flexWrap: 'wrap'}}>
             {
                 products.length ? (
                     <>
                       { products.map((product) => {
                             return (
-                                <div key={product.id}>
+                                <div key={product.id} className='products-container' style={{display: 'flex', flexWrap: 'nowrap'}}>
                                     <Item 
                                         name={product.dressName}
                                         image={product.image}
